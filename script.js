@@ -1,24 +1,15 @@
 //Display current day
 let currentTime = document.getElementById("#currentTime");
-let currentDay = moment().format("dddd, MMMM Do, ha");
+let currentDay = moment().format("dddd, MMMM Do");
 $("#currentDay").text(currentDay);
 
-//What happen when page refresh
-window.addEventListener("load", function () {
-  let savedValue = localStorage.getItem("textareaValue");
-  let savedColor = localStorage.getItem(
-    "backgroundColor",
-    textarea.style.backgroundColor
-  );
-
-  if (savedValue) {
-    textarea.value = savedValue;
-
-    if (color) {
-      color.style.backgroundColor = color;
-    }
-  }
+// $(".saveBtn").onClick function   
+$(".saveBtn").on("click", function(){
+  let textInput = $(this).siblings(".description").val();
+  let timeStamp = $(this).parent().attr("id");
+  localStorage.setItem(timeStamp, textInput);
 });
+
 
 //On click function store textarea value and color in localStorage
 $(document).ready(function () {
