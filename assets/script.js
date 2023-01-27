@@ -32,10 +32,3 @@ let currentHour = moment().hours();
 actualTime()
 
 
-$(document).ready(function () {
-  $("#button2").on("click", function () {
-    $("#textarea2").addClass("past");
-    localStorage.setItem("textareaValue", textarea.value);
-    localStorage.setItem("backgroundColor", past);
-  });
-});
