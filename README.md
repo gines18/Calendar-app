@@ -1,4 +1,4 @@
-Work calendar app.
+Job Scheduling App
 
 User is presented with app title and current date:
 <img src="https://github.com/gines18/Calendar-app/blob/main/img/Screenshot%202023-02-06%20at%201.30.21%20pm.png">
@@ -17,8 +17,7 @@ red: curren hour
 
 green: future hours
 
-When user refresh browser tab all tasks are saved and displayed in calendar app.
-
+When user refresh browser tab all tasks are saved and displayed Job scheduling App
 
 Link to the app: 
-https://gines18.github.io/Calendar-app/
+https://gines18.github.io/Job-Scheduling-App/
